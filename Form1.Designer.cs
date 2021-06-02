@@ -46,7 +46,7 @@
             this.buttonmultiply = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonclear = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textnumdisplay = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonone
@@ -227,13 +227,17 @@
             this.buttonclear.UseVisualStyleBackColor = true;
             this.buttonclear.Click += new System.EventHandler(this.Button2_Click_1);
             // 
-            // textBox1
+            // textnumdisplay
             // 
-            this.textBox1.Location = new System.Drawing.Point(9, 29);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 83);
-            this.textBox1.TabIndex = 17;
+            this.textnumdisplay.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textnumdisplay.Location = new System.Drawing.Point(9, 29);
+            this.textnumdisplay.Multiline = true;
+            this.textnumdisplay.Name = "textnumdisplay";
+            this.textnumdisplay.Size = new System.Drawing.Size(363, 83);
+            this.textnumdisplay.TabIndex = 17;
+            this.textnumdisplay.Text = "0";
+            this.textnumdisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textnumdisplay.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // Form1
             // 
@@ -241,7 +245,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.pngtree_mathematics_education_calculator_ruler_hand_drawn_background_image_340649;
             this.ClientSize = new System.Drawing.Size(500, 441);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textnumdisplay);
             this.Controls.Add(this.buttonclear);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonmultiply);
@@ -287,7 +291,7 @@
         private System.Windows.Forms.Button buttonmultiply;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonclear;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textnumdisplay;
     }
 }
 
