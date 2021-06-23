@@ -24,27 +24,12 @@ namespace WindowsFormsApp1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click_3(object sender, EventArgs e)
-        {
-
+            if (textnumdisplay.Text == "0")
+            {
+                textnumdisplay.Clear();
+            }
+            Button button = (Button)sender;
+            textnumdisplay.Text = textnumdisplay.Text + button.Text;
         }
 
         private void Button2_Click_1(object sender, EventArgs e)
