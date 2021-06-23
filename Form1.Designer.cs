@@ -47,6 +47,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buttonclear = new System.Windows.Forms.Button();
             this.textnumdisplay = new System.Windows.Forms.TextBox();
+            this.cancel_onesymbol = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonone
@@ -219,7 +220,7 @@
             // buttonclear
             // 
             this.buttonclear.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonclear.Location = new System.Drawing.Point(392, 45);
+            this.buttonclear.Location = new System.Drawing.Point(399, 62);
             this.buttonclear.Name = "buttonclear";
             this.buttonclear.Size = new System.Drawing.Size(78, 50);
             this.buttonclear.TabIndex = 16;
@@ -239,12 +240,23 @@
             this.textnumdisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textnumdisplay.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
+            // cancel_onesymbol
+            // 
+            this.cancel_onesymbol.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel_onesymbol.Location = new System.Drawing.Point(399, 12);
+            this.cancel_onesymbol.Name = "cancel_onesymbol";
+            this.cancel_onesymbol.Size = new System.Drawing.Size(78, 44);
+            this.cancel_onesymbol.TabIndex = 18;
+            this.cancel_onesymbol.Text = "C";
+            this.cancel_onesymbol.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.pngtree_mathematics_education_calculator_ruler_hand_drawn_background_image_340649;
             this.ClientSize = new System.Drawing.Size(500, 441);
+            this.Controls.Add(this.cancel_onesymbol);
             this.Controls.Add(this.textnumdisplay);
             this.Controls.Add(this.buttonclear);
             this.Controls.Add(this.button1);
@@ -292,6 +304,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonclear;
         private System.Windows.Forms.TextBox textnumdisplay;
+        private System.Windows.Forms.Button cancel_onesymbol;
     }
 }
 
