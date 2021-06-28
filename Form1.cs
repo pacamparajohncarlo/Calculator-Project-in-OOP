@@ -55,6 +55,10 @@ namespace WindowsFormsApp1
 
         private void Cancel_onesymbol_Click(object sender, EventArgs e)
         {
+            if (textnumdisplay.Text.Length > 0) ;
+            {
+                textnumdisplay.Text = textnumdisplay.Text.Remove(textnumdisplay.Text.Length - 1, 1);
+            }
         }
     }
 }
