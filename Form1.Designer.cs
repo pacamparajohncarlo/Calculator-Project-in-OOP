@@ -169,6 +169,7 @@
             this.buttondcml.TabIndex = 10;
             this.buttondcml.Text = ".";
             this.buttondcml.UseVisualStyleBackColor = true;
+            this.buttondcml.Click += new System.EventHandler(this.Buttondcml_Click);
             // 
             // buttonequal
             // 
@@ -180,7 +181,7 @@
             this.buttonequal.TabIndex = 11;
             this.buttonequal.Text = "=";
             this.buttonequal.UseVisualStyleBackColor = true;
-            this.buttonequal.Click += new System.EventHandler(this.Buttonequal_Click);
+            this.buttonequal.Click += new System.EventHandler(this.Buttondcml_Click);
             // 
             // buttonadd
             // 
@@ -191,6 +192,7 @@
             this.buttonadd.TabIndex = 12;
             this.buttonadd.Text = "+";
             this.buttonadd.UseVisualStyleBackColor = true;
+            this.buttonadd.Click += new System.EventHandler(this.Buttondcml_Click);
             // 
             // buttonsubtract
             // 
@@ -201,6 +203,7 @@
             this.buttonsubtract.TabIndex = 13;
             this.buttonsubtract.Text = "-";
             this.buttonsubtract.UseVisualStyleBackColor = true;
+            this.buttonsubtract.Click += new System.EventHandler(this.Buttondcml_Click);
             // 
             // buttonmultiply
             // 
@@ -211,6 +214,7 @@
             this.buttonmultiply.TabIndex = 14;
             this.buttonmultiply.Text = "x";
             this.buttonmultiply.UseVisualStyleBackColor = true;
+            this.buttonmultiply.Click += new System.EventHandler(this.Buttondcml_Click);
             // 
             // button1
             // 
@@ -221,6 +225,7 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "÷";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Buttondcml_Click);
             // 
             // buttonclear
             // 
@@ -236,7 +241,7 @@
             // textnumdisplay
             // 
             this.textnumdisplay.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textnumdisplay.Location = new System.Drawing.Point(9, 29);
+            this.textnumdisplay.Location = new System.Drawing.Point(11, 20);
             this.textnumdisplay.Multiline = true;
             this.textnumdisplay.Name = "textnumdisplay";
             this.textnumdisplay.Size = new System.Drawing.Size(363, 83);
@@ -254,6 +259,7 @@
             this.cancel_onesymbol.TabIndex = 18;
             this.cancel_onesymbol.Text = "C";
             this.cancel_onesymbol.UseVisualStyleBackColor = true;
+            this.cancel_onesymbol.Click += new System.EventHandler(this.Cancel_onesymbol_Click);
             // 
             // Form1
             // 
