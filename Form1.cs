@@ -12,9 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        Double val = 0;
-        String text = "";
-        bool operation = false;
+        string firstvar = "";
+        string secondvar = "";
+        char function;
+        double result = 0.0;
+        string calcInput = "";
         public Form1()
         {
             InitializeComponent();
@@ -27,7 +29,7 @@ namespace WindowsFormsApp1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if ((textnumdisplay.Text == "0")||(operation))
+            if ((textnumdisplay.Text == "0");
             {
                 textnumdisplay.Clear();
             }
@@ -38,6 +40,7 @@ namespace WindowsFormsApp1
         private void Button2_Click_1(object sender, EventArgs e)
         {
             textnumdisplay.Clear();
+            calcInput = "0";
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -59,6 +62,36 @@ namespace WindowsFormsApp1
             {
                 textnumdisplay.Text = textnumdisplay.Text.Remove(textnumdisplay.Text.Length - 1, 1);
             }
+        }
+
+        private void Buttondcml_Click_1(object sender, EventArgs e)
+        {
+            Buttoncml_Click.text = Buttoncml_Click.text + ".";
+        }
+
+        private void Buttondcml_Click_2(object sender, EventArgs e)
+        {
+   
+        }
+
+        private void Buttonmultiply_Click(object sender, EventArgs e)
+        {
+            function = "x";
+        }
+
+        private void Buttonsubtract_Click(object sender, EventArgs e)
+        {
+            function = "-";
+        }
+
+        private void Buttonadd_Click(object sender, EventArgs e)
+        {
+            function = "+";
+        }
+
+        private void Buttondivide_Click(object sender, EventArgs e)
+        {
+            function = "/";
         }
     }
 }

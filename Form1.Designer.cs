@@ -39,15 +39,15 @@
             this.buttonseven = new System.Windows.Forms.Button();
             this.buttoneight = new System.Windows.Forms.Button();
             this.buttonnine = new System.Windows.Forms.Button();
-            this.buttondcml = new System.Windows.Forms.Button();
             this.buttonequal = new System.Windows.Forms.Button();
             this.buttonadd = new System.Windows.Forms.Button();
             this.buttonsubtract = new System.Windows.Forms.Button();
             this.buttonmultiply = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttondivide = new System.Windows.Forms.Button();
             this.buttonclear = new System.Windows.Forms.Button();
             this.textnumdisplay = new System.Windows.Forms.TextBox();
             this.cancel_onesymbol = new System.Windows.Forms.Button();
+            this.buttondcml = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonone
@@ -160,17 +160,6 @@
             this.buttonnine.UseVisualStyleBackColor = true;
             this.buttonnine.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // buttondcml
-            // 
-            this.buttondcml.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttondcml.Location = new System.Drawing.Point(132, 352);
-            this.buttondcml.Name = "buttondcml";
-            this.buttondcml.Size = new System.Drawing.Size(117, 72);
-            this.buttondcml.TabIndex = 10;
-            this.buttondcml.Text = ".";
-            this.buttondcml.UseVisualStyleBackColor = true;
-            this.buttondcml.Click += new System.EventHandler(this.Buttondcml_Click);
-            // 
             // buttonequal
             // 
             this.buttonequal.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -181,7 +170,6 @@
             this.buttonequal.TabIndex = 11;
             this.buttonequal.Text = "=";
             this.buttonequal.UseVisualStyleBackColor = true;
-            this.buttonequal.Click += new System.EventHandler(this.Buttondcml_Click);
             // 
             // buttonadd
             // 
@@ -192,7 +180,7 @@
             this.buttonadd.TabIndex = 12;
             this.buttonadd.Text = "+";
             this.buttonadd.UseVisualStyleBackColor = true;
-            this.buttonadd.Click += new System.EventHandler(this.Buttondcml_Click);
+            this.buttonadd.Click += new System.EventHandler(this.Buttonadd_Click);
             // 
             // buttonsubtract
             // 
@@ -203,7 +191,7 @@
             this.buttonsubtract.TabIndex = 13;
             this.buttonsubtract.Text = "-";
             this.buttonsubtract.UseVisualStyleBackColor = true;
-            this.buttonsubtract.Click += new System.EventHandler(this.Buttondcml_Click);
+            this.buttonsubtract.Click += new System.EventHandler(this.Buttonsubtract_Click);
             // 
             // buttonmultiply
             // 
@@ -214,18 +202,18 @@
             this.buttonmultiply.TabIndex = 14;
             this.buttonmultiply.Text = "x";
             this.buttonmultiply.UseVisualStyleBackColor = true;
-            this.buttonmultiply.Click += new System.EventHandler(this.Buttondcml_Click);
+            this.buttonmultiply.Click += new System.EventHandler(this.Buttonmultiply_Click);
             // 
-            // button1
+            // buttondivide
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(378, 118);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 73);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "÷";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Buttondcml_Click);
+            this.buttondivide.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttondivide.Location = new System.Drawing.Point(378, 118);
+            this.buttondivide.Name = "buttondivide";
+            this.buttondivide.Size = new System.Drawing.Size(117, 73);
+            this.buttondivide.TabIndex = 15;
+            this.buttondivide.Text = "÷";
+            this.buttondivide.UseVisualStyleBackColor = true;
+            this.buttondivide.Click += new System.EventHandler(this.Buttondivide_Click);
             // 
             // buttonclear
             // 
@@ -261,6 +249,17 @@
             this.cancel_onesymbol.UseVisualStyleBackColor = true;
             this.cancel_onesymbol.Click += new System.EventHandler(this.Cancel_onesymbol_Click);
             // 
+            // buttondcml
+            // 
+            this.buttondcml.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttondcml.Location = new System.Drawing.Point(132, 352);
+            this.buttondcml.Name = "buttondcml";
+            this.buttondcml.Size = new System.Drawing.Size(117, 72);
+            this.buttondcml.TabIndex = 10;
+            this.buttondcml.Text = ".";
+            this.buttondcml.UseVisualStyleBackColor = true;
+            this.buttondcml.Click += new System.EventHandler(this.Buttondcml_Click_2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,7 +269,7 @@
             this.Controls.Add(this.cancel_onesymbol);
             this.Controls.Add(this.textnumdisplay);
             this.Controls.Add(this.buttonclear);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttondivide);
             this.Controls.Add(this.buttonmultiply);
             this.Controls.Add(this.buttonsubtract);
             this.Controls.Add(this.buttonadd);
@@ -307,15 +306,15 @@
         private System.Windows.Forms.Button buttonseven;
         private System.Windows.Forms.Button buttoneight;
         private System.Windows.Forms.Button buttonnine;
-        private System.Windows.Forms.Button buttondcml;
         private System.Windows.Forms.Button buttonequal;
         private System.Windows.Forms.Button buttonadd;
         private System.Windows.Forms.Button buttonsubtract;
         private System.Windows.Forms.Button buttonmultiply;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttondivide;
         private System.Windows.Forms.Button buttonclear;
         private System.Windows.Forms.TextBox textnumdisplay;
         private System.Windows.Forms.Button cancel_onesymbol;
+        private System.Windows.Forms.Button buttondcml;
     }
 }
 
