@@ -29,14 +29,14 @@ namespace WindowsFormsApp1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            textnumdisplay.Tex = "";
-            calcInput = "1";
-            textnumdisplay.Text = calcInput;
+            textnumdisplay.Text = "";
+            calcInput += "1";
+            textnumdisplay.Text += calcInput;
         }
 
         private void Button2_Click_1(object sender, EventArgs e)
         {
-            textnumdisplay.Text.Remove();
+            
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -46,23 +46,12 @@ namespace WindowsFormsApp1
 
         private void Buttondcml_Click(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-            text = button.Text;
-            val = Double.Parse(textnumdisplay.Text);
-            operation = true;
-        }
 
-        private void Cancel_onesymbol_Click(object sender, EventArgs e)
-        {
-            if (textnumdisplay.Text.Length > 0) ;
-            {
-                textnumdisplay.Text = textnumdisplay.Text.Remove(textnumdisplay.Text.Length - 1, 1);
-            }
         }
 
         private void Buttondcml_Click_1(object sender, EventArgs e)
         {
-            Buttoncml_Click.text = Buttoncml_Click.text + ".";
+           
         }
 
         private void Buttondcml_Click_2(object sender, EventArgs e)
@@ -72,28 +61,28 @@ namespace WindowsFormsApp1
 
         private void Buttonmultiply_Click(object sender, EventArgs e)
         {
-            function = "x";
+            function = '*';
             firstvar = calcInput;
             calcInput = "";
         }
 
         private void Buttonsubtract_Click(object sender, EventArgs e)
         {
-            function = "-";
+            function = '-';
             firstvar = calcInput;
             calcInput = "";
         }
 
         private void Buttonadd_Click(object sender, EventArgs e)
         {
-            function = "+";
+            function = '+';
             firstvar = calcInput;
             calcInput = "";
         }
 
         private void Buttondivide_Click(object sender, EventArgs e)
         {
-            function = "/";
+            function = '/';
             firstvar = calcInput;
             calcInput = "";
         }
@@ -101,75 +90,113 @@ namespace WindowsFormsApp1
         private void Buttonequal_Click(object sender, EventArgs e)
         {
             secondvar = calcInput;
-            double firstvar, secondvar;
-            firstvar = Convert.ToDouble(first);
-            secondvar = Convert.ToDouble(second);
+            double firstnumber, secondnumber;
+            firstnumber = Convert.ToDouble(firstvar);
+            secondnumber = Convert.ToDouble(secondvar);
             //Operation
             //Addition
-            if function == "+";
+            if (function == '+')
+            {
+                result = firstnumber + secondnumber;
+                textnumdisplay.Text = result.ToString();
+            }
+            //Subtraction
+            else if (function == '-')
+            {
+                result = firstnumber - secondnumber;
+                textnumdisplay.Text = result.ToString();
+            }
+            //Multiplication
+            else if (function == '*')
+            {
+                result = firstnumber * secondnumber;
+                textnumdisplay.Text = result.ToString();
+            }
+            //Division
+            else if (function == '/')
+            {
+                if (secondnumber == '0')
+                {
+                    textnumdisplay.Text = "Syntax Error";
+                }
+                else
+                {
+                    result = firstnumber / secondnumber;
+                    textnumdisplay.Text = result.ToString();
+                } 
+            }
         }
 
         private void Buttonzero_Click(object sender, EventArgs e)
         {
-            textnumdisplay.Tex = "";
-            calcInput = "0";
-            textnumdisplay.Text = calcInput;
+            textnumdisplay.Text = "";
+            calcInput += "0";
+            textnumdisplay.Text += calcInput;
         }
 
         private void Buttontwo_Click(object sender, EventArgs e)
         {
-            textnumdisplay.Tex = "";
-            calcInput = "2";
-            textnumdisplay.Text = calcInput;
+            textnumdisplay.Text = "";
+            calcInput += "2";
+            textnumdisplay.Text += calcInput;
         }
 
         private void Buttonthree_Click(object sender, EventArgs e)
         {
-            textnumdisplay.Tex = "";
-            calcInput = "3";
-            textnumdisplay.Text = calcInput;
+            textnumdisplay.Text = "";
+            calcInput += "3";
+            textnumdisplay.Text += calcInput;
         }
 
         private void Buttonfour_Click(object sender, EventArgs e)
         {
-            textnumdisplay.Tex = "";
-            calcInput = "4";
-            textnumdisplay.Text = calcInput;
+            textnumdisplay.Text = "";
+            calcInput += "4";
+            textnumdisplay.Text += calcInput;
         }
 
         private void Buttonfive_Click(object sender, EventArgs e)
         {
-            textnumdisplay.Tex = "";
-            calcInput = "5";
-            textnumdisplay.Text = calcInput;
+            textnumdisplay.Text = "";
+            calcInput += "5";
+            textnumdisplay.Text += calcInput;
         }
 
         private void Buttonsix_Click(object sender, EventArgs e)
         {
-            textnumdisplay.Tex = "";
-            calcInput = "6";
-            textnumdisplay.Text = calcInput;
+            textnumdisplay.Text = "";
+            calcInput += "6";
+            textnumdisplay.Text += calcInput;
         }
 
         private void Buttonseven_Click(object sender, EventArgs e)
         {
-            textnumdisplay.Tex = "";
-            calcInput = "7";
-            textnumdisplay.Text = calcInput;
+            textnumdisplay.Text = "";
+            calcInput += "7";
+            textnumdisplay.Text += calcInput;
         }
 
         private void Buttoneight_Click(object sender, EventArgs e)
         {
-            textnumdisplay.Tex = "";
-            calcInput = "8";
-            textnumdisplay.Text = calcInput;
+            textnumdisplay.Text = "";
+            calcInput += "8";
+            textnumdisplay.Text += calcInput;
         }
 
         private void Buttonnine_Click(object sender, EventArgs e)
         {
-            textnumdisplay.Tex = "";
-            calcInput = "9";
-            textnumdisplay.Text = calcInput;
+            textnumdisplay.Text = "";
+            calcInput += "9";
+            textnumdisplay.Text += calcInput;
+        }
+
+        private void Buttonclear_Click(object sender, EventArgs e)
+        {
+            firstvar = "";
+            secondvar = "";
+            calcInput = "";
+            result = 0.0;
+            textnumdisplay.Text = "0";
         }
     }
 }

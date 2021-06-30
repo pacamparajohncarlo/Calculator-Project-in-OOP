@@ -46,7 +46,6 @@
             this.buttondivide = new System.Windows.Forms.Button();
             this.buttonclear = new System.Windows.Forms.Button();
             this.textnumdisplay = new System.Windows.Forms.TextBox();
-            this.cancel_onesymbol = new System.Windows.Forms.Button();
             this.buttondcml = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -207,25 +206,25 @@
             // 
             // buttondivide
             // 
-            this.buttondivide.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttondivide.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttondivide.Location = new System.Drawing.Point(378, 118);
             this.buttondivide.Name = "buttondivide";
             this.buttondivide.Size = new System.Drawing.Size(117, 73);
             this.buttondivide.TabIndex = 15;
-            this.buttondivide.Text = "÷";
+            this.buttondivide.Text = "/";
             this.buttondivide.UseVisualStyleBackColor = true;
             this.buttondivide.Click += new System.EventHandler(this.Buttondivide_Click);
             // 
             // buttonclear
             // 
             this.buttonclear.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonclear.Location = new System.Drawing.Point(399, 62);
+            this.buttonclear.Location = new System.Drawing.Point(396, 38);
             this.buttonclear.Name = "buttonclear";
             this.buttonclear.Size = new System.Drawing.Size(78, 50);
             this.buttonclear.TabIndex = 16;
             this.buttonclear.Text = "CLEAR";
             this.buttonclear.UseVisualStyleBackColor = true;
-            this.buttonclear.Click += new System.EventHandler(this.Button2_Click_1);
+            this.buttonclear.Click += new System.EventHandler(this.Buttonclear_Click);
             // 
             // textnumdisplay
             // 
@@ -238,17 +237,6 @@
             this.textnumdisplay.Text = "0";
             this.textnumdisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textnumdisplay.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
-            // 
-            // cancel_onesymbol
-            // 
-            this.cancel_onesymbol.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel_onesymbol.Location = new System.Drawing.Point(399, 12);
-            this.cancel_onesymbol.Name = "cancel_onesymbol";
-            this.cancel_onesymbol.Size = new System.Drawing.Size(78, 44);
-            this.cancel_onesymbol.TabIndex = 18;
-            this.cancel_onesymbol.Text = "C";
-            this.cancel_onesymbol.UseVisualStyleBackColor = true;
-            this.cancel_onesymbol.Click += new System.EventHandler(this.Cancel_onesymbol_Click);
             // 
             // buttondcml
             // 
@@ -267,7 +255,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.pngtree_mathematics_education_calculator_ruler_hand_drawn_background_image_340649;
             this.ClientSize = new System.Drawing.Size(500, 441);
-            this.Controls.Add(this.cancel_onesymbol);
             this.Controls.Add(this.textnumdisplay);
             this.Controls.Add(this.buttonclear);
             this.Controls.Add(this.buttondivide);
@@ -314,7 +301,6 @@
         private System.Windows.Forms.Button buttondivide;
         private System.Windows.Forms.Button buttonclear;
         private System.Windows.Forms.TextBox textnumdisplay;
-        private System.Windows.Forms.Button cancel_onesymbol;
         private System.Windows.Forms.Button buttondcml;
     }
 }
