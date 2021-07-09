@@ -211,14 +211,14 @@
             this.buttondivide.Name = "buttondivide";
             this.buttondivide.Size = new System.Drawing.Size(117, 73);
             this.buttondivide.TabIndex = 15;
-            this.buttondivide.Text = "/";
+            this.buttondivide.Text = "÷";
             this.buttondivide.UseVisualStyleBackColor = true;
             this.buttondivide.Click += new System.EventHandler(this.Buttondivide_Click);
             // 
             // buttonclear
             // 
             this.buttonclear.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonclear.Location = new System.Drawing.Point(396, 38);
+            this.buttonclear.Location = new System.Drawing.Point(396, 37);
             this.buttonclear.Name = "buttonclear";
             this.buttonclear.Size = new System.Drawing.Size(78, 50);
             this.buttonclear.TabIndex = 16;
